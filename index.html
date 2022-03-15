@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Music me</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&family=Gayathri&family=Mitr:wght@300&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">
+		<div class="index_background">
+			<div class="navigation">
+				<ul>
+					<li><a href="./video.html">Video</a></li>
+					<li><a href="./audio.html">Audio</a></li>
+  					<li><a class="active" href="#Index">Home</a></li>
+				</ul>
+			</div>
+			<div class="image"> <img src="images/photo-1470225620780-dba8ba36b745.jpg" alt="" width="100%" height="700px"></div>
+			<p class="name">MISCELLANY</p>
+			<p class="motto">Tone of the Heart</p>
+			<div class="discription normal">
+				<p>Music player, audio player, Listen to music. Are you crazy about music and want to listen to it wherever you go and whatever you do? Just go through the “MISCELLANY” and enjoy your favorite singers and bands! MISCELLANY is the best music website for listening to music, watching music videos and downloading songs for free at any time and any place. If you can't live without your favorite songs, MISCELLANY is meant for you!<br>
+				See below some of benefits of this website:
+				<ul>
+					<li>listen to populer songs</li>
+					<li>watch populer music videos</li>
+					<li>download songs for free in mp3 format, or as mp4 files</li>
+				</ul>
+				Don't waste your time and watch MISCELLANY right now!</p>	
+			</div>
+
+			<div>
+				<h1 class="trending normal">TRENDING</h1>
+				<table class="trending normal">
+					<tr>
+						<td>Trending 1</td>
+						<td>Trending 2</td>
+						<td>Trending 3</td>
+					</tr>
+					<tr>
+						<td>
+							<iframe src="https://drive.google.com/file/d/1Eo0olW1r6MaX6iew39FFFakSvHLUKbrm/preview" width="300" height="200"></iframe>
+						</td>
+						<td>
+							<iframe src="https://drive.google.com/file/d/1Cvg4cHUkzPpRKrB8F-nZiIhHBMzgpI43/preview" width="300" height="200"></iframe>
+						</td>
+						<td>
+							<iframe src="https://drive.google.com/file/d/11YLW75VAXsnhwNJeO7NfcIALdTOh7H49/preview" width="300" height="200"></iframe>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Ed Sheeran <br>Shape of You</p>
+						</td>
+						<td>
+							<p>Westlife <br>I Wanna Grow Old With You</p>
+						</td>
+						<td>
+							<p>Ed Sheeran<br>Perfect</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="normal text">
+				<h2>See Your Geolocation</h2>
+				<button onclick="getLocation()">Your geolocation</button>
+
+				<p id="demo"></p>
+
+				<script>// this is a script written in JavaScript(JS). A comprehesive lesson and labs on JS will be done very soon
+					var x = document.getElementById("demo");
+
+					function getLocation() {
+  						if (navigator.geolocation) {//checks whether geolocation is supported
+    						navigator.geolocation.getCurrentPosition(showPosition);// if getCurrentPosition is successful pass the location
+  						} 
+  						else { 
+    						x.innerHTML = "Geolocation is not supported by this browser.";
+  						}
+					}
+
+					function showPosition(position) {//sets the text of the paragraph with id 'demo'
+  						x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+					}
+				</script>
+
+			</div>
+			<div>
+				<footer>
+					<br>
+					<hr class="last">
+					<br>
+				
+					<div>Copyright &#169; 2021 NipuniPremadasa. All Rights reserved</p><br></div>
+				</footer>
+		</div>
+	</div>
+	
+</body>
+</html>
